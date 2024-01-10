@@ -1,0 +1,33 @@
+{
+  "name": "@fadev/utils",
+  "version": "0.0.1",
+  "description": "A collection of Utilities & Components",
+  "type": "module",
+  "repository": "coharishreddy/fadev",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "exports": {
+    "default": "./index.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "author": "Harish Reddy",
+  "license": "MIT"
+}
