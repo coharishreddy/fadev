@@ -1,11 +1,13 @@
 {
   "name": "@fadev/utils",
   "version": "0.0.1",
-  "description": "A collection of Utilities & Components",
+  "description": "A collection of shared Utilities & Components",
   "type": "module",
   "repository": "coharishreddy/fadev",
   "scripts": {
-    "build": "tsc"
+    "dev": "tsc --outDir dist --watch",
+    "build": "tsc --outDir dist",
+    "lint": "eslint src/**/*.ts*"
   },
   "devDependencies": {
     "@types/react": "^18.2.20",
@@ -21,13 +23,15 @@
   },
   "files": [
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "src/*"
   ],
-  "types": "index.d.ts",
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "Harish Reddy",
   "license": "MIT"
 }
